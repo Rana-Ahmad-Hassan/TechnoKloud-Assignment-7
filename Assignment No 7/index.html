@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container-fluid p-4">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-center px-5">
+            <div class="container-fluid d-flex justify-content-center col-md-10">
+                <img src="assets/logo.jpeg" class="img-fluid px-5" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link px-md-4 text-dark" aria-current="page" href="#">Expert Sourcing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-md-4 text-dark" href="#">Contract Manufacturing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-md-4 text-dark">Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-md-4 text-dark" href="#">Financing</a>
+                        </li>
+                        <li class="nav-item dropdown px-md-4">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Our Story</a></li>
+                                <li><a class="dropdown-item" href="#">How to buy</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="ms-auto d-flex ">
+                        <div class="">
+                            <button type="button" class="btn btn-outline-info px-4"
+                                style="border-radius: 20px;">Register</button>
+                        </div>
+                        <div class="px-2">
+                            <button type="button" class="btn btn-outline-success px-4" style="border-radius: 20px;"><i
+                                    class="bi bi-person px-2"></i>Sign In</button>
+                        </div>
+                        <div class="px-3">
+                            <h2><i class="bi bi-basket2 text-success"></i></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container bg-light p-3 search border">
+        <div class="row d-flex justify-content-center align-items-center text-center">
+            <div class="col-md-2">
+                <h1 class="btn fs-5 col-d-grid"><i class="bi bi-ui-checks-grid text-info px-2"></i>Categoris</h1>
+            </div>
+            <div class="col-md-8 col-6">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 p-2" type="search" placeholder="Search" aria-label="Search"
+                        style="border-radius: 20px;">
+                </form>
+            </div>
+            <div class="col-md-2 col-6">
+                <button class="btn btn-info text-white px-5 py-2 " style="border-radius: 20px;"
+                    type="submit">Search</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-md-2">
+                <div class="d-flex">
+                    <p class="fs-5 text-dark">Products</p>
+                    <p class="fs-5 px-md-3 text-secondary">(524 Products)</p>
+                </div>
+                <div class="border py-5 px-4">
+                    <p class="fs-5">Price</p>
+                    <div class="d-flex">
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="from"
+                            style="border-radius: 20px;">
+                        <p>___</p>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="to"
+                            style="border-radius: 20px;">
+                    </div>
+                    <div class="py-4">
+                        <p class="fs-5">MOQ</p>
+                        <input type="number" class="form-control text-center" id="exampleFormControlInput1"
+                            placeholder="Less Then" style="border-radius: 20px;">
+                    </div>
+                    <div class="py-4">
+                        <p class="fs-5">Production Certificate</p>
+                        <input type="number" class="form-control text-center" id="exampleFormControlInput1"
+                            placeholder="Production Certificate" style="border-radius: 20px;">
+                    </div>
+
+
+
+                    <ul class="list-group list1 py-3">
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                            <label class="form-check-label px-2" for="firstCheckbox">First checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                            <label class="form-check-label px-2" for="secondCheckbox">Second checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label px-2" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label px-2" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label px-2" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label px-2" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                    </ul>
+
+                    <div class="py-4">
+                        <p class="fs-5">Supplier Certification</p>
+                        <input type="number" class="form-control text-center" id="exampleFormControlInput1"
+                            placeholder="Supplier Certificate " style="border-radius: 20px;">
+                    </div>
+
+
+                    <ul class="list-group list1 py-3">
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                            <label class="form-check-label px-2" for="firstCheckbox">First checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                            <label class="form-check-label px-2" for="secondCheckbox">Second checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label px-2" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label px-2" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label px-2" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label px-2" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                    </ul>
+                    <div class="py-4">
+                        <p class="fs-5">Manufacturer Location</p>
+                        <input type="number" class="form-control text-center" id="exampleFormControlInput1"
+                            placeholder="Country/Region " style="border-radius: 20px;">
+                    </div>
+
+                    <ul class="list-group list1 py-3">
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                            <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                            <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                        <li class="list-item py-1">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                        </li>
+                    </ul>
+                    <p class="fs-5 pt-4">Stock availability</p>
+
+                    <ul class="list-group list1">
+                        <li class="list-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                            <label class="form-check-label" for="firstCheckbox">In USA</label>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-md-7">
+                <div class="d-md-flex">
+                    <p>Buy</p>
+                    <div class="ms-auto text-center fs-6 bg-dark text-white px-5 py-0">
+                        <p class="px-5 fs-5 mt-1">Placing bulk orders on BuyHive is Safe.</p>
+                        <p class="btn text-white ">Click to learn how it work!</p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <h3><i class="bi bi-bounding-box text-danger"></i></h3>
+                    <h3> <i class="bi bi-bounding-box-circles mx-3 text-info"></i></h3>
+                    <div class="ms-auto ">
+                        <button type="button" class="btn btn-light btn-lg">
+                            << /button>
+                                <button type="button" class="btn btn-light btn-lg">1</button>
+                                <button type="button" class="btn btn-lg">off 22</button>
+                                <button type="button" class="btn btn-light btn-lg">></button>
+                    </div>
+                </div>
+
+
+
+                <!-- ROW 1 -->
+                <div class="mt-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col ">
+                            <div class="card border-0 hoverable" style="width: 18rem;">
+                                <img src="assets/img3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img22.jpg" class="card-img-top text-center" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- ROW 2 -->
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img3.jpg" class="card-img-top text-center" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- ROW 3 -->
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img7.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img4.jpg" class="card-img-top text-center" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img9.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- ROW 4 -->
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img10.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img11.jpg" class="card-img-top text-center" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img12.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- ROW 5 -->
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img13.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img14.jpg" class="card-img-top text-center" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img15.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- ROW 6 -->
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img3.jpg" class="card-img-top text-center" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- ROW 7 -->
+                    <div class="row d-flex justify-content-center mt-5">
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img22.jpg" class="card-img-top text-center" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img src="assets/img3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build...</p>
+                                    <p>MOQ 1024 Pieces</p>
+                                    <strong>
+                                        <p>$1.40/Piece</p>
+                                    </strong>
+                                    <button type="button" class="btn btn-info w-100" style="border-radius: 20px;">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex">
+                        <div>
+
+                        </div>
+                        <div class="ms-auto mt-4">
+                            <button type="button" class="btn btn-light btn-lg">
+                                << /button>
+                                    <button type="button" class="btn btn-light btn-lg">1</button>
+                                    <button type="button" class="btn btn-lg">off 22</button>
+                                    <button type="button" class="btn btn-light btn-lg">></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+
+
+    <div class="container-fluid bg-light">
+        <footer class="py-5 mt-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-3 offset-md-1 mb-3">
+                    <form>
+                       <img src="assets/logo.jpeg" alt="">
+                        <p class="text-secondary">Connecting buyers and manufacturers using the world’s best sourcing experts & technology built by buyers, for buyers.</p>
+                        <p class="fs-5">Sign Up to Our Newsletter</p>
+                        <div class="flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary mt-4" type="button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="mb-3">About Us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our Story</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">How to Buy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our Partners</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms of Use</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Expert Sourcing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">
+                            Contract Manufacturing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Buy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Financing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="mb-3">Account</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="mb-3">Our Location</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <div class="container d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
+                <p>© 2023 Company, Inc. All rights reserved.</p>
+               <div class="col-md-4 d-flex ms-auto">
+                <p class="text-secondary">Terma of Use</p>
+                <p class="mx-4 text-secondary">Privacy Policy</p>
+               </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
